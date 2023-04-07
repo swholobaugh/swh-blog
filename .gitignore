@@ -18,6 +18,7 @@ db.sqlite3-journal
 
 # Minimal Virtualenv
 .venv
+venv
 
 # Jetbrains
 .idea
