@@ -27,8 +27,5 @@
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.2",
     "vite": "^4.2.1"
-  },
-  "dependencies": {
-    "tailwindcss-radix": "^2.8.0"
   }
 }
