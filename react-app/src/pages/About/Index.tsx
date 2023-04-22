@@ -1,10 +1,15 @@
 import * as React from 'react';
-const Index = (): React.ReactNode => {
+import Layout from "../../components/layout/Layout";
+function About(props) {
+  const {name} = props
   return (
     <div className="flex flex-col gap-y-4 p-2">
-      Welcome to the About Page
+      <h1>About</h1>
+      <div>Welcome to the About Page, {name}</div>
     </div>
   )
 }
 
-export default Index;
+About.layout = page => <Layout children={page} title="About" />
+
+export default About;
