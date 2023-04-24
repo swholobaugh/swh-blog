@@ -14,3 +14,8 @@ def about(request):
 @inertia('Blog/Index')
 def blog(request):
     return {}
+
+
+@inertia('Blog/posts/Post')
+def post(request):
+    return {}
