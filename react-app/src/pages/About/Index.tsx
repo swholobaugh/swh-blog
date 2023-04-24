@@ -1,6 +1,10 @@
 import * as React from 'react';
 import Layout from "../../components/layout/Layout";
-function About(props) {
+
+interface IProps {
+  name: string
+}
+function About(props: IProps) {
   const {name} = props
   return (
     <div className="flex flex-col gap-y-4 p-2">

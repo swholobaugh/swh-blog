@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Layout from "../../components/layout/Layout";
-function Home() {
+
+interface IProps {}
+function Home(props: IProps) {
   return (
     <div className="flex flex-col gap-y-4 p-2">
       <h1>Home</h1>
