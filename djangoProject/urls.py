@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from blog import views
 
 urlpatterns = [
@@ -25,3 +27,5 @@ urlpatterns = [
     path('blog/posts/', views.post, name='posts')
     #path('blog/posts/<int:post_id>', views.post, name="post")
 ]
+
+urlpatterns += static(settings.POSTS_URL, document_root=settings.MEDIA_ROOT)
